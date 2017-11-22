@@ -21,6 +21,7 @@ perceive, reason, act rationally, behave, learn
 - does the application solve a real problem?
 
 ### AI view Categories
-  |---|---|
-  |Systems that think like humans|Systems that think rationally|
-  |Systems that act like humans| systems that act rationally|
+
+|Systems that think like humans|Systems that think rationally|
+| --- | --- |
+|**Systems that act like humans**| **systems that act rationally**|
