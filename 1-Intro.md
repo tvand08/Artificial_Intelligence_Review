@@ -40,4 +40,4 @@ perceive, reason, act rationally, behave, learn
 - For any given class of environments and tasks, we seek the agent (or class of agents) with the best performance
 
 ### Other definitions in AI
-- AI is the design of flexible programs that repsond productively in situations that were not specifically anticipated by the designer
+- AI is the design of flexible programs that respond productively in situations that were not specifically anticipated by the designer
