@@ -1,7 +1,5 @@
 # Chapter 2: Intelligent agents
 
-## Agents
-
 ### Definitions
 - __Agent:__ An agent is anything that can be viewed as perceiving its environment through sensors and acting upon that environment through actuators
 - __Percept:__ Perceptual input (eg. text, image, sound, ... )
