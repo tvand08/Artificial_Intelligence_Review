@@ -1,4 +1,4 @@
-# Intelligent agents
+# Chapter 2: Intelligent agents
 
 ## Agents
 
@@ -121,4 +121,50 @@
 - implemented through condition-action rules
 - e.g if dirty then suck
 
-<img src="Images/simple_reflex.png" width="400" height="200">
+<img src="Images/simple_reflex.png" width="300" height="200">
+
+- only works for fully Observable
+
+##### Model based Reflex
+- to tackle partially Observable environments
+   - maintain internal state that depends on the percept history
+   - i.e. agent keeps track of the part of the world it can't seek
+- Over time update state using world knowledge
+   - How does the world change?
+   - how do agent actions affect world
+
+<img src="Images/model_reflex.png" width="300" height="200">
+
+##### Goal based
+- The agent needs a goal to know which situations are desirable
+   - Things become difficuilt when long sequences of actions are required to find the goal.
+- Typically investigated in search and planning research
+- Major difference: future is taken into account
+- Is more flexible since knowledge is represented explicitly and can be manipulated
+
+<img src="Images/goal_based.png" width="300" height="200">
+
+##### Utility based
+- Certain goals can be reached in different ways.
+   - Some are better, have a higher Utility
+- Utility function maps a state onto a real number
+- Improves on goals:
+   - Selecting between conflicting goals
+   - Select appropriately between several goals based on likelihood of success.
+
+<img src="Images/utility.png" width="300" height="200">
+
+### Learning
+- All previous agents describe methods for selecting actions
+   - yet it does not explain the origin of these programs
+   - Learning mechanisms can be used to perform this task.
+   - Teach them instead of instructing them.
+   - Advantage is the robustness of the program toward initially unknown environments.
+- Learning Element: introduce improvements in performance element.
+   - critic provides feedback on agents performance based on fixed performance standard.
+- Performance element: selecting actions based on Percepts
+   - corresponds to the previous agent programs
+- Problem generator:
+   - suggest actions that will lead to new and informative experiences
+
+<img src="Images/learning_agent.png" width="300" height="200">
