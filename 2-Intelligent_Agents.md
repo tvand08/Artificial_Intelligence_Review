@@ -39,4 +39,86 @@
 - single - one agent involved
 - multi - more than one (adversarial or cooperative)
 
-<img src="https://github.com/tvand08/Artificial_Intelligence_Review/blob/master/Images/Vacuum_World.png" width="200" height="200">
+### Vacuum World Example
+<img src="Images/Vacuum_World.png" width="400" height="200">
+- Environment: Square A and B
+- Percepts: [location and content]=>[A,Dirty]
+- Actions: Left, right, suck, none
+
+### The Concept of Rationality
+- A **rational agent** is one that does the right thing.
+   - every entry in the table is filled out correctly
+- What is the right thing?
+   - Approximation: the most successful agent.
+
+### Rationality
+- What is rational at a given time depends on four things:
+   - performance measurements
+   - prior environment knowledge
+   - Actions
+   - Percept sequence to date (sensors).
+
+##### PEAS
+- To design a rational agent we must specify its task envorinment
+- description of environment
+   - **P** erformance measurement
+   - **E** nviroment
+   - **A** ctuators
+   - **S** ensors
+###### Example
+- Agent: Internet Shopping
+   - Performance
+      - Safety
+      - Destination
+      - Profits
+      - Legality
+      - Comfort
+   - Environment
+     - Streets
+     - Other Cars
+     - Pedestrians
+   - Actuators
+      - Steering
+      - Accelerating
+      - Brake
+      - Horn
+      - Display
+   - Sensors
+      - Video
+      - Sonar
+      - Speedometer
+      - Engine Sensors
+      - Keyboard
+      - GPS
+
+  Environment types
+
+|              | Solitaire | Backgammon | Internet Shopping | taxi  |
+| ------------ |:---------:|:----------:|:-----------------:|:-----:|
+|Observable    |Full       | Full       |      Parital      |Partial|
+|Deterministic |Yes        |No          |Yes                | No    |
+|Episodic      |No         |No          |No                 |No|
+|Static|Yes|Yes|Semi|No|
+|Discrete|Yes|Yes|Yes|No|
+|Single-Agent|Yes|No|No|No|
+
+### Agent function and programs
+- An agent is completely specified by the agent function mapping percept sequences to Actions
+- Aim: find a way to implement the rational agent function concisely
+
+#### Agent Structure
+- How does the inside of the agent work?
+   - Agent = architecture + program
+- All agents have the same skeleton:
+   - input = current Percepts
+   - output = Action
+   - Program = manipulates input to produce output
+
+#### Agent types
+##### Simple Reflex
+- Select action on the basis of only the current percept
+- large reduction in possible percept/action situations
+- implemented through condition-action rules
+- e.g if dirty then suck
+
+<img src="Images/simple_reflex.png" width="400" height="200">
