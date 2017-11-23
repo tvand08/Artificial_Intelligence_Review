@@ -53,7 +53,7 @@
 - Presume that we - the computer entity- are always the MAX
 - When examining a game tree, the MAX wants to obtain the highest static eval. score at each levels
    - but the MAX presumes that the opponent is intelligent, and has access to the same evaluation scores
-   - henve must presume that opponent will try to prevent you from obtaining best score... and vice versa
+   - hence must presume that opponent will try to prevent you from obtaining best score... and vice versa
 - __Minimax procedure:__ a search strategy for game trees in which:
    1. a finite search ply level p is used: tree expanded p deep
    2. static evaluation done on all expanded leaf configurations
@@ -133,3 +133,16 @@
   - Why can we ignore it?
   - __Reason:__ we must presume the opponent is as intelligent as we are, and will make moves that strengthen his position and make moves that weaken us
   - --> a smart opponent will foil our brilliant moves(alpha-beta knows this)
+
+### Heuristics and game trees
+- Horizon effect: when using a finite, fixed search depth, you cannot see any deeper
+   - decisions are necessarily based on limited information
+   - an effect of this is that decisions can be unduly influenced by what look like outstanding moves... but if the search progressed a little further, these moves might be bad after all
+   - another effect: delaying the inevitable(move bad situations beyond the "horizon")
+- singular-extension heuristic: if one move appears considerably better than others, search its subtree a little deeper
+   - this tries to discount superficially good moves that are really bad
+- Search-until-quiescent heuristic: don't let captures)or key game configuration changes_ unduly influence choices
+- tapered search: vary depth factor among nodes
+   - can vary the depth factor with heuristic ranking of children
+- can also use rule based decisions in controlling search
+   - high level database of domain knowledge can influence search decisions
