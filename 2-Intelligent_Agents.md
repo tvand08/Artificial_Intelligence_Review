@@ -39,4 +39,4 @@
 - single - one agent involved
 - multi - more than one (adversarial or cooperative)
 
-![](/Images/Vacuum_World.png | width=100)
+<img src="https://github.com/tvand08/Artificial_Intelligence_Review/blob/master/Images/Vacuum_World.png" width="200" height="200">
